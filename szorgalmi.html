@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Keypad</title>
+
+        <style>
+            body {
+                background-color: khaki;
+            }
+
+            #tartalom {
+                background-color: white;
+                border-radius: 10px;
+                display: inline-block;
+            }
+
+            #tartalom > * {
+                margin: 10px;
+                border: 2px double blue;
+                border-radius: 5px;
+                float: left;
+            }
+
+            #felirat {
+                background-color: khaki;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="tartalom">
+            <div id="felirat">
+                3. dolgozat
+            </div>
+
+            <table>
+                <tr>
+                    <th colspan="10">Keypad</th>
+                </tr>
+
+                <tr>
+                    <td>Q</td>
+                    <td>W</td>
+                    <td>E</td>
+                    <td>R</td>
+                    <td>T</td>
+                    <td>Z</td>
+                    <td>U</td>
+                    <td>I</td>
+                    <td>O</td>
+                    <td>P</td>
+                </tr>
+
+                <tr>
+                    <td>A</td>
+                    <td>S</td>
+                    <td>D</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>
+                    <td rowspan="2">✔️</td>
+                </tr>
+
+                <tr>
+                    <td>Y</td>
+                    <td>X</td>
+                    <td>C</td>
+                    <td>V</td>
+                    <td>B</td>
+                    <td>N</td>
+                    <td>M</td>
+                    <td colspan="2">____</td>
+                </tr>
+            </table>
+ 
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">,</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
