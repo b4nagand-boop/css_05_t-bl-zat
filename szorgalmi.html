@@ -14,6 +14,7 @@
                 background-color: white;
                 border-radius: 10px;
                 padding: 1px;
+                width: fit-content;
             }
 
             #felirat, #gombok > * {
@@ -26,6 +27,14 @@
                 background-color: khaki;
                 width: auto;
                 margin-bottom: 0px;
+            }
+
+            #felirat p {
+                text-align: center;
+                vertical-align: middle;
+                font-size: 90%;
+                margin: 0;
+                height: 25px;
             }
 
             .gomb {
@@ -52,8 +61,17 @@
             }
 
             .tickg {
-                background-color: lightcoral;
+                background-color: lightblue;
                 height: auto;
+            }
+
+            .szamg {
+                background-color: coral;
+            }
+
+            .vesszog {
+                background-color: lightblue;
+                width: auto;
             }
         </style>
     </head>
@@ -61,7 +79,7 @@
     <body>
         <div id="tartalom">
             <div id="felirat">
-                3. dolgozat
+                <p>3. dolgozat</p>
             </div>
 
             <div id="gombok" style="display: flex;">
@@ -108,28 +126,28 @@
                     </tr>
                 </table>
     
-                <table>
+                <table style="margin-left: 0px;">
                     <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
+                        <td class="gomb szamg">1</td>
+                        <td class="gomb szamg">2</td>
+                        <td class="gomb szamg">3</td>
                     </tr>
                     
                     <tr>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
+                        <td class="gomb szamg">4</td>
+                        <td class="gomb szamg">5</td>
+                        <td class="gomb szamg">6</td>
                     </tr>
 
                     <tr>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
+                        <td class="gomb szamg">7</td>
+                        <td class="gomb szamg">8</td>
+                        <td class="gomb szamg">9</td>
                     </tr>
 
                     <tr>
-                        <td colspan="2">,</td>
-                        <td>0</td>
+                        <td colspan="2" class="gomb vesszog">,</td>
+                        <td class="gomb szamg">0</td>
                     </tr>
                 </table>
             </div>
