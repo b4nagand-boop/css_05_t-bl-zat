@@ -13,19 +13,47 @@
             #tartalom {
                 background-color: white;
                 border-radius: 10px;
-                display: inline-block;
+                padding: 1px;
             }
 
-            #tartalom > * {
-                margin: 10px;
+            #felirat, #gombok > * {
+                margin: 8px;
                 border: 2px double blue;
                 border-radius: 5px;
-                float: left;
             }
 
             #felirat {
                 background-color: khaki;
+                width: auto;
+                margin-bottom: 0px;
+            }
+
+            .gomb {
+                width: 22px;
+                height: 22px;
+                vertical-align: middle;
+                text-align: center;
+                border-radius: 5px;
+                box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.8);
+            }
+
+            .betug {
+                background-color: lightgreen;
+            }
+
+            .keypadg {
                 width: 100%;
+                background-color: aqua;
+            }
+
+            .spaceg {
+                background-color: lightblue;
+                width: auto;
+            }
+
+            .tickg {
+                background-color: lightcoral;
+                height: auto;
             }
         </style>
     </head>
@@ -36,73 +64,75 @@
                 3. dolgozat
             </div>
 
-            <table>
-                <tr>
-                    <th colspan="10">Keypad</th>
-                </tr>
+            <div id="gombok" style="display: flex;">
+                <table>
+                    <tr>
+                        <th class="gomb keypadg" colspan="10">Keypad</th>
+                    </tr>
 
-                <tr>
-                    <td>Q</td>
-                    <td>W</td>
-                    <td>E</td>
-                    <td>R</td>
-                    <td>T</td>
-                    <td>Z</td>
-                    <td>U</td>
-                    <td>I</td>
-                    <td>O</td>
-                    <td>P</td>
-                </tr>
+                    <tr>
+                        <td class="gomb betug">Q</td>
+                        <td class="gomb betug">W</td>
+                        <td class="gomb betug">E</td>
+                        <td class="gomb betug">R</td>
+                        <td class="gomb betug">T</td>
+                        <td class="gomb betug">Z</td>
+                        <td class="gomb betug">U</td>
+                        <td class="gomb betug">I</td>
+                        <td class="gomb betug">O</td>
+                        <td class="gomb betug">P</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="gomb betug">A</td>
+                        <td class="gomb betug">S</td>
+                        <td class="gomb betug">D</td>
+                        <td class="gomb betug">F</td>
+                        <td class="gomb betug">G</td>
+                        <td class="gomb betug">H</td>
+                        <td class="gomb betug">J</td>
+                        <td class="gomb betug">K</td>
+                        <td class="gomb betug">L</td>
+                        <td rowspan="2" class="gomb tickg">✔️</td>
+                    </tr>
 
-                <tr>
-                    <td>A</td>
-                    <td>S</td>
-                    <td>D</td>
-                    <td>F</td>
-                    <td>G</td>
-                    <td>H</td>
-                    <td>J</td>
-                    <td>K</td>
-                    <td>L</td>
-                    <td rowspan="2">✔️</td>
-                </tr>
+                    <tr>
+                        <td class="gomb betug">Y</td>
+                        <td class="gomb betug">X</td>
+                        <td class="gomb betug">C</td>
+                        <td class="gomb betug">V</td>
+                        <td class="gomb betug">B</td>
+                        <td class="gomb betug">N</td>
+                        <td class="gomb betug">M</td>
+                        <td colspan="2" class="gomb spaceg">____</td>
+                    </tr>
+                </table>
+    
+                <table>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
 
-                <tr>
-                    <td>Y</td>
-                    <td>X</td>
-                    <td>C</td>
-                    <td>V</td>
-                    <td>B</td>
-                    <td>N</td>
-                    <td>M</td>
-                    <td colspan="2">____</td>
-                </tr>
-            </table>
- 
-            <table>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                </tr>
-                
-                <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
 
-                <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                </tr>
-
-                <tr>
-                    <td colspan="2">,</td>
-                    <td>0</td>
-                </tr>
-            </table>
+                    <tr>
+                        <td colspan="2">,</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 </html>
